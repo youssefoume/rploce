@@ -1100,8 +1100,11 @@ __metadata:
     "@tsconfig/esm": "npm:^1.0.3"
     "@tsconfig/node18": "npm:^2.0.1"
     "@tsconfig/strictest": "npm:^2.0.1"
+    fets: "npm:^0.4.2"
     graphql: "npm:^16.6.0"
     prettier: "npm:^2.8.8"
+    socket.io: "npm:^4.7.1"
+    uWebSockets.js: "uNetworking/uWebSockets.js#v20.30.0"
   languageName: unknown
   linkType: soft
 
@@ -1125,6 +1128,13 @@ __metadata:
     parcel: "npm:^2.9.2"
   languageName: unknown
   linkType: soft
+
+"@socket.io/component-emitter@npm:~3.1.0":
+  version: 3.1.0
+  resolution: "@socket.io/component-emitter@npm:3.1.0"
+  checksum: f71e5c9d9f6839c2b3ecd2acf462f4a4d605d4dc2a89730a0c2b6f3ff6bd3598c5b25a6ddb0c53be5b2fc40154c051704e7e3e052607cd4dddd5567c336107a9
+  languageName: node
+  linkType: hard
 
 "@swc/core-darwin-arm64@npm:1.3.66":
   version: 1.3.66
@@ -1284,6 +1294,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookie@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@types/cookie@npm:0.4.1"
+  checksum: b4bbdfb07d15056f118afcc6232ad006094ec65defa585b085f02242cff8a0bfb104a6b54ab366498cff4c4eb7ed1bd69986d1219c11c6aae5abd3ae059edf4c
+  languageName: node
+  linkType: hard
+
+"@types/cors@npm:^2.8.12":
+  version: 2.8.13
+  resolution: "@types/cors@npm:2.8.13"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 9c8b1c732295603fcc0e1e8e8f0a332e7ec03d10bb18b9398225e5e2fbf6a2fd64758926204d306ef100a5bdd7b35324bdc34bc57fc49ed9807446930bc678f9
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.12
   resolution: "@types/json-schema@npm:7.0.12"
@@ -1295,6 +1321,13 @@ __metadata:
   version: 20.3.1
   resolution: "@types/node@npm:20.3.1"
   checksum: 262e63e934b31335efdd0cb9c6b46e20c0bfa826952f670596ca8621d21d29382ff701e1afdd83f43eff06b42f43a054617ed835b074fb56f61bf1150e9711d5
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:>=10.0.0":
+  version: 20.4.2
+  resolution: "@types/node@npm:20.4.2"
+  checksum: fd50a5c03effb1e11b16236e9950f9ea71ffb7efb4c864979d1225ba07354f09cbfbcef4e9d0d9fb548aa1ffa4ebadd555194b9436b649dc0ef2bb8d546fc72e
   languageName: node
   linkType: hard
 
@@ -1316,6 +1349,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@whatwg-node/cookie-store@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "@whatwg-node/cookie-store@npm:0.2.1"
+  dependencies:
+    tslib: "npm:^2.3.1"
+  checksum: 78172754d91f744be71847c0a3f26414a2267c741dca1ced2f628ca6c15b6858885cc34aeddaae5bc399e677a9cdeac50bcca749586424e54bc7b392ba605a40
+  languageName: node
+  linkType: hard
+
 "@whatwg-node/events@npm:^0.1.0":
   version: 0.1.1
   resolution: "@whatwg-node/events@npm:0.1.1"
@@ -1333,6 +1375,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@whatwg-node/fetch@npm:^0.9.7":
+  version: 0.9.8
+  resolution: "@whatwg-node/fetch@npm:0.9.8"
+  dependencies:
+    "@whatwg-node/node-fetch": "npm:^0.4.7"
+    urlpattern-polyfill: "npm:^9.0.0"
+  checksum: d026f6678237a147bf670beff752645319cc1c13574d45a027f3fb30eedbcdaee94adf3a8816465cbeeb622a946b05f0ed7645001c339166c838a28827484cd4
+  languageName: node
+  linkType: hard
+
 "@whatwg-node/node-fetch@npm:^0.4.5":
   version: 0.4.5
   resolution: "@whatwg-node/node-fetch@npm:0.4.5"
@@ -1346,6 +1398,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@whatwg-node/node-fetch@npm:^0.4.7":
+  version: 0.4.7
+  resolution: "@whatwg-node/node-fetch@npm:0.4.7"
+  dependencies:
+    "@whatwg-node/events": "npm:^0.1.0"
+    busboy: "npm:^1.6.0"
+    fast-querystring: "npm:^1.1.1"
+    fast-url-parser: "npm:^1.1.3"
+    tslib: "npm:^2.3.1"
+  checksum: 0ad5f8b6daee0899bcdee50b7aed7f8dbe67d4fb7c7e8f075837f683d08d4ed443d54f0081175d97ac838a512fbbc5c0234d80c765bee65e637058a3ad2511ea
+  languageName: node
+  linkType: hard
+
 "@whatwg-node/server@npm:^0.8.7":
   version: 0.8.12
   resolution: "@whatwg-node/server@npm:0.8.12"
@@ -1353,6 +1418,16 @@ __metadata:
     "@whatwg-node/fetch": "npm:^0.9.6"
     tslib: "npm:^2.3.1"
   checksum: 37abb323a7e9862dc7bc6375f0f1ea48530d818ebb3b2338583db64dd386f4114314866829ff3b448a5b08c1823613a93b9fec5f09f9176f2c1935a15fe4b559
+  languageName: node
+  linkType: hard
+
+"@whatwg-node/server@npm:^0.9.0":
+  version: 0.9.3
+  resolution: "@whatwg-node/server@npm:0.9.3"
+  dependencies:
+    "@whatwg-node/fetch": "npm:^0.9.7"
+    tslib: "npm:^2.3.1"
+  checksum: 6820e94ee65df48e826cec70660b275178bdf0b679efb8927ffa7fceb11906c5519c443c2cd6e31919bd6588fab71ee0e41d1aea85788902069fa295916d9810
   languageName: node
   linkType: hard
 
@@ -1367,6 +1442,16 @@ __metadata:
   version: 1.7.5
   resolution: "abortcontroller-polyfill@npm:1.7.5"
   checksum: e5aaf9255421e6b17c7cb311b9471f7b0670c1b61a1d6e25d86cfe76848629e6b00e8a051bf0a91975eb3b7e28f7492d57ec531ed1ffe867279300bf9ff82d81
+  languageName: node
+  linkType: hard
+
+"accepts@npm:~1.3.4":
+  version: 1.3.8
+  resolution: "accepts@npm:1.3.8"
+  dependencies:
+    mime-types: "npm:~2.1.34"
+    negotiator: "npm:0.6.3"
+  checksum: 4634cf08b9ccf6a7618a006d54b6a29c159c233eb40194e397373308244ebad0436155d0604463d401673d47c1e1f65ea1237d58cbe8ad780d01f20f61ce19f4
   languageName: node
   linkType: hard
 
@@ -1502,6 +1587,13 @@ __metadata:
   dependencies:
     safe-buffer: "npm:^5.0.1"
   checksum: fbaf18f82914683d479403061b515e2b861ecf69bf82ec37d41923351a77e3f7cab543e933fe45ce40aab5e3173e13bb76933f5e22600a1f39a89babf4eb477b
+  languageName: node
+  linkType: hard
+
+"base64id@npm:2.0.0, base64id@npm:~2.0.0":
+  version: 2.0.0
+  resolution: "base64id@npm:2.0.0"
+  checksum: 5bb2126a6ce59d79c1d73ea2bc1cf320f751c18257cf8b05bf0fb3655aaa9fc270c9370546cd258d801401e57d5b93e92781bc3f51b4e2c33a556c7c640f1174
   languageName: node
   linkType: hard
 
@@ -1715,6 +1807,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie@npm:~0.4.1":
+  version: 0.4.2
+  resolution: "cookie@npm:0.4.2"
+  checksum: e2b0be16f59835785be50f5dfe076c26e81ab49c988a6290144444d0dfdf8192e82b0aa1857734b292567795e7af3f2c951d82e5036a2aacb15cd4a6681b5d49
+  languageName: node
+  linkType: hard
+
+"cors@npm:~2.8.5":
+  version: 2.8.5
+  resolution: "cors@npm:2.8.5"
+  dependencies:
+    object-assign: "npm:^4"
+    vary: "npm:^1"
+  checksum: 8451ae4bb9710e6cc03c61283b226747397162b54d12cf77e257184e6bd568387864d6a817bba9752c2febb686fe45a14b7b0ce6f68e3e70d25df2ba6e17e80e
+  languageName: node
+  linkType: hard
+
 "cosmiconfig@npm:^8.0.0":
   version: 8.2.0
   resolution: "cosmiconfig@npm:8.2.0"
@@ -1777,7 +1886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.3":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.3, debug@npm:~4.3.1, debug@npm:~4.3.2":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -1898,6 +2007,31 @@ __metadata:
   dependencies:
     iconv-lite: "npm:^0.6.2"
   checksum: 954eb7d006c8d466207dcda57ddd15b1d6667607b8da15c7ce400d377504aafcc5e2f5507027cfb045cad7aefd15d18aa3f6e14f3a73ed2b26ad5ff08004536b
+  languageName: node
+  linkType: hard
+
+"engine.io-parser@npm:~5.1.0":
+  version: 5.1.0
+  resolution: "engine.io-parser@npm:5.1.0"
+  checksum: 64177441af48857b909a646b4db731042fdfece6dafa2fa81432d3974a26f87e5c7263a852586cb314b3a3751fb9503676e9da8920f418c6bbf19d42caafe3ef
+  languageName: node
+  linkType: hard
+
+"engine.io@npm:~6.5.0":
+  version: 6.5.1
+  resolution: "engine.io@npm:6.5.1"
+  dependencies:
+    "@types/cookie": "npm:^0.4.1"
+    "@types/cors": "npm:^2.8.12"
+    "@types/node": "npm:>=10.0.0"
+    accepts: "npm:~1.3.4"
+    base64id: "npm:2.0.0"
+    cookie: "npm:~0.4.1"
+    cors: "npm:~2.8.5"
+    debug: "npm:~4.3.1"
+    engine.io-parser: "npm:~5.1.0"
+    ws: "npm:~8.11.0"
+  checksum: 51084ec9d75c5915e0a048077fec3d59fb932d74574700df1ed0b109a37697d54bbf89f9df92012c33b5082dc7eec7f43ea9f0fe1fd7832318dbd4408c4aeaee
   languageName: node
   linkType: hard
 
@@ -2084,6 +2218,26 @@ __metadata:
     zod: "npm:^3.21.4"
     zod-to-json-schema: "npm:^3.20.5"
   checksum: c040d9341afd73a403720b61772e1352ec5e10cfbad9d48274be88c8cb1473694b6225caeb34ac4603622cf691ee3c36527739d4f5dcd37b898db49eb2cfbe35
+  languageName: node
+  linkType: hard
+
+"fets@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "fets@npm:0.4.2"
+  dependencies:
+    "@ardatan/fast-json-stringify": "npm:^0.0.6"
+    "@whatwg-node/cookie-store": "npm:^0.2.0"
+    "@whatwg-node/fetch": "npm:^0.9.4"
+    "@whatwg-node/server": "npm:^0.9.0"
+    ajv: "npm:^8.12.0"
+    ajv-formats: "npm:^2.1.1"
+    hotscript: "npm:^1.0.11"
+    json-schema-to-ts: "npm:^2.9.1"
+    ts-toolbelt: "npm:^9.6.0"
+    tslib: "npm:^2.3.1"
+    zod: "npm:^3.21.4"
+    zod-to-json-schema: "npm:^3.20.5"
+  checksum: 20f56ca58bf9cb77749203a54fcc29148c58375f055890475b9d51a28f68beb47da04c3c783eab641a379436b53697bbb6fec3bc4329310266f8a281e24067c0
   languageName: node
   linkType: hard
 
@@ -2723,6 +2877,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mime-db@npm:1.52.0":
+  version: 1.52.0
+  resolution: "mime-db@npm:1.52.0"
+  checksum: 95baf687a3f14ff2cc433e30dea5c4931c7f4b67059d44a0098cfb833858cad63ec13c20f98762bddd088c4e9dac6d95862db1ea9d3fe3fa68f57b69a325000d
+  languageName: node
+  linkType: hard
+
+"mime-types@npm:~2.1.34":
+  version: 2.1.35
+  resolution: "mime-types@npm:2.1.35"
+  dependencies:
+    mime-db: "npm:1.52.0"
+  checksum: 51e3b38d1b1b83da082f7c29042bcb22036101346394696b7643ef5da27ebf6bf71643bd45225ee75e4ea2836213780efc8c3dcd2055c84b49eb0afc061419d0
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.1.1":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -2903,7 +3073,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"negotiator@npm:^0.6.3":
+"negotiator@npm:0.6.3, negotiator@npm:^0.6.3":
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
   checksum: d8e3b42d99638b1f363ce114c98e6906ade395c230058e50644417bd398b01381133dbca4bc49f30f6b1c93254e4b5a2d50cc47adcdabf2a8476b6f16311ad5d
@@ -3025,6 +3195,13 @@ __metadata:
   version: 1.1.1
   resolution: "nullthrows@npm:1.1.1"
   checksum: 5bcf69cf40c3840b9864e0f5b6d9326d462ac0aec38b37e3f56087faf9464a74fac76a80f12cb06775d10ea168f3d8a9d87f740a3f01c9bdd5ca85a8816e3380
+  languageName: node
+  linkType: hard
+
+"object-assign@npm:^4":
+  version: 4.1.1
+  resolution: "object-assign@npm:4.1.1"
+  checksum: f5cd1f2f1e82e12207e4f2377d9d7d90fbc0d9822a6afa717a6dcab6930d8925e1ebbbb25df770c31ff11335ee423459ba65ffa2e53999926c328b806b4d73d6
   languageName: node
   linkType: hard
 
@@ -3376,6 +3553,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"socket.io-adapter@npm:~2.5.2":
+  version: 2.5.2
+  resolution: "socket.io-adapter@npm:2.5.2"
+  dependencies:
+    ws: "npm:~8.11.0"
+  checksum: fb37ac99985e20fc132456b31c1443837911b7cdf5e7e9a32213c78d714d1694d0c0173d478973ea75ddebc840356778b2568996e449cdd9d10659ae5c441b3e
+  languageName: node
+  linkType: hard
+
+"socket.io-parser@npm:~4.2.4":
+  version: 4.2.4
+  resolution: "socket.io-parser@npm:4.2.4"
+  dependencies:
+    "@socket.io/component-emitter": "npm:~3.1.0"
+    debug: "npm:~4.3.1"
+  checksum: 2e87a70c442ee5b2fc45746478f8c0c8c8802a558c64da8f0d07fba6c1bc69b0339ce0c03a7d948843dda1e5471805ee2e4155225517c19df35d5ebf856a5c54
+  languageName: node
+  linkType: hard
+
+"socket.io@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "socket.io@npm:4.7.1"
+  dependencies:
+    accepts: "npm:~1.3.4"
+    base64id: "npm:~2.0.0"
+    cors: "npm:~2.8.5"
+    debug: "npm:~4.3.2"
+    engine.io: "npm:~6.5.0"
+    socket.io-adapter: "npm:~2.5.2"
+    socket.io-parser: "npm:~4.2.4"
+  checksum: 452b5a0a75d584b46a4071db8beca2fa5038d571e1eaa5ae9e2095f497128d981d7378a3439818e0147f8756cc305a0e2eada71960d7ad97b72298efef23dc78
+  languageName: node
+  linkType: hard
+
 "socks-proxy-agent@npm:^7.0.0":
   version: 7.0.0
   resolution: "socks-proxy-agent@npm:7.0.0"
@@ -3572,6 +3783,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ts-toolbelt@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "ts-toolbelt@npm:9.6.0"
+  checksum: db99ff8d9b470cad80d9484b16270bee478f40b7047f117ad7e44ca4077648f0aaf91278f8d317153023374c6a4bbcc6ab3c78f19ad93b88d561454fada42edf
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^2.3.1, tslib@npm:^2.4.0":
   version: 2.5.3
   resolution: "tslib@npm:2.5.3"
@@ -3620,6 +3838,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: ef6d5eaa31049b41bf1ddf091806aed923e65ea3de951bb27e05bc65911c3bf373b3c2bcc9204d2d2dbdca7d2e06c6a645824580638a8c2c18e2e5155cfc33b7
+  languageName: node
+  linkType: hard
+
+"uWebSockets.js@uNetworking/uWebSockets.js#v20.30.0":
+  version: 20.30.0
+  resolution: "uWebSockets.js@https://github.com/uNetworking/uWebSockets.js.git#commit=d39d4181daf5b670d44cbc1b18f8c28c85fd4142"
+  checksum: a467af1eddaf5c92bd724c1d9eb44bc63f14567fc483f8f5c91232f8fd5438484a84ba50b4abc7f063199dc7b7c95dd39de52e015e85729f823673ac069df06e
   languageName: node
   linkType: hard
 
@@ -3685,6 +3910,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vary@npm:^1":
+  version: 1.1.2
+  resolution: "vary@npm:1.1.2"
+  checksum: b1db20d4be443aec48b8efab73386f83d947b7033b6b2f5a0c7ba4a1f9bc0200cb4cb396712468761f8edfe48dd68a6fdee7c65689b90937a2d767c714d25883
+  languageName: node
+  linkType: hard
+
 "weak-lru-cache@npm:^1.2.2":
   version: 1.2.2
   resolution: "weak-lru-cache@npm:1.2.2"
@@ -3738,6 +3970,21 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 37d243a577dfeee20586eae1e3208dfb4e4cea1211a2a4116a19b50d91e619ff3dbc5ec934e28ca9baaa11a65df826c8d65c5fd1bb81f0ce0dadb469d47061c2
+  languageName: node
+  linkType: hard
+
+"ws@npm:~8.11.0":
+  version: 8.11.0
+  resolution: "ws@npm:8.11.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: c573e020b665b724acf6d5500c117f2c117f2b07b7414700a5fe61fd03e850578649f951851afca3d7885ef2ee6ecd83881abb2ebe005defd62aeb657e13a9be
   languageName: node
   linkType: hard
 
